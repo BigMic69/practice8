@@ -1,0 +1,43 @@
+//---------- NAVIGATION (FLEXBOX) ---------->>>
+nav
+  width: 100%
+  height: auto
+  margin: 0
+  padding: 0
+  background-color: #171b0e
+  display: flex
+
+#nav-top
+  width: 100%
+  height: auto
+  margin: 0
+  padding: 0
+  ul
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    width: 100%
+    height: auto
+    margin: 0
+    padding: 5px 0
+    li
+      display: flex
+      list-style: none
+      box-sizing: border-box
+      a
+        width: 100%
+        margin: 0 auto
+        padding: 15px 0
+        color: #fff
+        font-size: 1.1em
+        text-align: center
+        font-style: italic
+        text-decoration: none
+        background-color: #333
+        border-bottom: 1px solid #121212
+        &:hover
+          color: #333
+          background: #555
+          border-bottom: 1px solid #fff
+        @media (min-width: 700px)
+          font-size: 1.5em
+          font-weight: 600

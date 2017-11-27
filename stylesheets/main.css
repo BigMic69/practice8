@@ -1,0 +1,396 @@
+/* line 5, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*---------- FONTS/TEXT ---------- */
+/*---------- COLORS ---------- */
+/*---------- BG IMAGE ---------- */
+/*---------- MARGIN/PADDING ---------- */
+/*---------- CONTAINER ---------- */
+/*---------- TRANSITIONS ---------- */
+/* line 2, ../sass/parts/_nav.sass */
+nav {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-color: #171b0e;
+  display: flex;
+}
+
+/* line 10, ../sass/parts/_nav.sass */
+#nav-top {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+/* line 15, ../sass/parts/_nav.sass */
+#nav-top ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 5px 0;
+}
+/* line 22, ../sass/parts/_nav.sass */
+#nav-top ul li {
+  display: flex;
+  list-style: none;
+  box-sizing: border-box;
+}
+/* line 26, ../sass/parts/_nav.sass */
+#nav-top ul li a {
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 1.1em;
+  text-align: center;
+  font-style: italic;
+  text-decoration: none;
+  background-color: #333;
+  border-bottom: 1px solid #121212;
+}
+/* line 37, ../sass/parts/_nav.sass */
+#nav-top ul li a:hover {
+  color: #333;
+  background: #555;
+  border-bottom: 1px solid #fff;
+}
+@media (min-width: 700px) {
+  /* line 26, ../sass/parts/_nav.sass */
+  #nav-top ul li a {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+}
+
+/* line 2, ../sass/parts/_video.sass */
+#videoSection {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  background-image: url(../img/f1-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/* line 11, ../sass/parts/_video.sass */
+#videoSection .video-wrap {
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #121212;
+  box-shadow: 1px 1px 7px #fff;
+}
+@media (min-width: 700px) {
+  /* line 11, ../sass/parts/_video.sass */
+  #videoSection .video-wrap {
+    width: 50% !important;
+  }
+}
+/* line 22, ../sass/parts/_video.sass */
+#videoSection .video-wrap video {
+  width: 100%;
+}
+
+/* line 1, ../sass/parts/_car.sass */
+section {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* line 3, ../sass/parts/_car.sass */
+section .car-section-wrap {
+  width: 100%;
+  min-height: 200px;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+/* line 14, ../sass/parts/_car.sass */
+section .car-section-wrap div {
+  margin: 0;
+  padding: 0;
+  border: 2px solid #282B22;
+}
+/* line 18, ../sass/parts/_car.sass */
+section .car-section-wrap div img {
+  border-radius: 10px;
+  border: thin solid #444;
+  box-shadow: 1px 1px 6px #282B22;
+}
+
+/* line 24, ../sass/parts/_car.sass */
+.img-wrap-1 {
+  height: 300px;
+  background-image: url(../img/car-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 32, ../sass/parts/_car.sass */
+.img-wrap-1 .img-1 {
+  width: 200px;
+}
+
+/* line 36, ../sass/parts/_car.sass */
+.img-wrap-2 {
+  position: relative;
+  height: 300px;
+  background-image: url(../img/car-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 45, ../sass/parts/_car.sass */
+.img-wrap-2 .img-2 {
+  height: 100px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+/* line 53, ../sass/parts/_car.sass */
+.img-wrap-3 {
+  width: 100%;
+  height: 300px;
+  background-image: url(../img/car-3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 61, ../sass/parts/_car.sass */
+.img-wrap-3 .img-3 {
+  width: 25%;
+}
+
+/* line 65, ../sass/parts/_car.sass */
+.img-wrap-4 {
+  height: 300px;
+  position: relative;
+  background-image: url(../img/car-4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 74, ../sass/parts/_car.sass */
+.img-wrap-4 .img-4 {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* line 82, ../sass/parts/_car.sass */
+.img-wrap-5 {
+  position: relative;
+  height: 300px;
+  background-image: url(../img/car-5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 91, ../sass/parts/_car.sass */
+.img-wrap-5 .img-5 {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 30%;
+}
+
+/* line 97, ../sass/parts/_car.sass */
+.img-wrap-13 {
+  position: relative;
+  height: 300px;
+  background-image: url(../img/car-13.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 106, ../sass/parts/_car.sass */
+.img-wrap-13 .img-13 {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 30%;
+}
+
+/* line 34, ../sass/main.sass */
+* {
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 39, ../sass/main.sass */
+body {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #333;
+  letter-spacing: 1.2px;
+}
+
+/* line 44, ../sass/main.sass */
+.inner-body-wrap {
+  background-color: #333333;
+}
+
+/* line 51, ../sass/main.sass */
+.hero-wrap {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  margin: 0;
+  padding: 0;
+  font-family: tangerine;
+  background-image: url(../img/dice-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/* line 63, ../sass/main.sass */
+.hero-wrap .hero-img {
+  position: absolute;
+  bottom: 0;
+  width: 30%;
+}
+
+/* line 69, ../sass/main.sass */
+.hero-wrap .text-wrap {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 20px;
+}
+/* line 74, ../sass/main.sass */
+.hero-wrap .text-wrap h1 {
+  width: 100%;
+  height: auto;
+  font-size: 30px;
+  color: #fff;
+}
+/* line 79, ../sass/main.sass */
+.hero-wrap .text-wrap p {
+  color: grey;
+  font-size: 22px;
+}
+
+/* line 85, ../sass/main.sass */
+#videoSection {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/f1-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/* line 96, ../sass/main.sass */
+#videoSection .video-wrap {
+  width: 100%;
+  padding: 0;
+  background-color: #121212;
+  box-shadow: 1px 1px 7px #fff;
+}
+@media (min-width: 700px) {
+  /* line 96, ../sass/main.sass */
+  #videoSection .video-wrap {
+    width: 60%;
+  }
+}
+/* line 103, ../sass/main.sass */
+#videoSection .video-wrap video {
+  width: 100%;
+}
+
+/* line 107, ../sass/main.sass */
+footer {
+  width: 100%;
+}
+/* line 109, ../sass/main.sass */
+footer p {
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  font-family: tangerine;
+  font-size: 18px;
+}
