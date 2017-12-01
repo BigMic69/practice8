@@ -3,14 +3,14 @@ section
   .car-section-wrap
     //flex: 1 25%
     width: 100%
-    min-height: 200px
+    min-height: 40vh
     margin: 0
     padding: 0
     display: grid
     grid-template-columns: 1fr
     //border: 1px dashed #fff
     @media (min-width: 700px)
-    grid-template-columns: repeat(2, 1fr)
+      grid-template-columns: repeat(2, 1fr)
     div
       margin: 0
       padding: 0
@@ -26,16 +26,17 @@ section
   height: 300px
   background:
     image: url(../img/car-1.jpg)
-    size: cover
+    size: auto 100%
     position: center
     repeat: no-repeat
   .img-1
-    width: 200px
+    position: absolute
+    right: 10px
+    width: 35%
 
 //---------- BREAK ---------->>>>>>>>>>
 .img-wrap-2
   position: relative
-  //width: 50%
   height: 300px
   background:
     image: url(../img/car-2.jpg)
@@ -43,8 +44,8 @@ section
     position: center
     repeat: no-repeat
   .img-2
-    //width: 200px
-    height: 100px
+    width: 35%
+    // height: 100px
     position: absolute
     bottom: 10px
     left: 10px
@@ -55,11 +56,11 @@ section
   height: 300px
   background:
     image: url(../img/car-3.jpg)
-    size: cover
+    size: auto 100%
     position: center
     repeat: no-repeat
   .img-3
-    width: 25%
+    width: 35%
 
 //---------- BREAK ---------->>>>>>>>>>
 .img-wrap-4
@@ -68,15 +69,17 @@ section
   position: relative
   background:
     image: url(../img/car-4.jpg)
-    size: cover
-    position: center
+    size: 100vh auto
+    position: 40% 20%
     repeat: no-repeat
+  @media (max-width: 700px)
+    size: cover
   .img-4
-    width: 30%
-    height: auto
     position: absolute
-    top: 20px
+    top: 5px
     right: 20px
+    width: 35%
+    height: auto
 
 //---------- BREAK ---------->>>>>>>>>>
 .img-wrap-5
@@ -85,14 +88,16 @@ section
   height: 300px
   background:
     image: url(../img/car-5.jpg)
-    size: cover
+    size: auto 100%
     position: center
     repeat: no-repeat
+  @media (max-width: 700px)
+    size: cover
   .img-5
     position: absolute
     left: 20px
-    bottom: 20px
-    width: 30%
+    bottom: 5px
+    width: 35%
 
 .img-wrap-13
   position: relative
@@ -100,11 +105,11 @@ section
   height: 300px
   background:
     image: url(../img/car-13.jpg)
-    size: cover
+    size: 100vh auto
     position: center
     repeat: no-repeat
   .img-13
     position: absolute
     right: 20px
-    bottom: 20px
-    width: 30%
+    bottom: 5px
+    width: 35%

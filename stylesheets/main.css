@@ -171,12 +171,17 @@ section {
 /* line 3, ../sass/parts/_car.sass */
 section .car-section-wrap {
   width: 100%;
-  min-height: 200px;
+  min-height: 40vh;
   margin: 0;
   padding: 0;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 700px) {
+  /* line 3, ../sass/parts/_car.sass */
+  section .car-section-wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 /* line 14, ../sass/parts/_car.sass */
 section .car-section-wrap div {
@@ -195,16 +200,18 @@ section .car-section-wrap div img {
 .img-wrap-1 {
   height: 300px;
   background-image: url(../img/car-1.jpg);
-  background-size: cover;
+  background-size: auto 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
 /* line 32, ../sass/parts/_car.sass */
 .img-wrap-1 .img-1 {
-  width: 200px;
+  position: absolute;
+  right: 10px;
+  width: 35%;
 }
 
-/* line 36, ../sass/parts/_car.sass */
+/* line 38, ../sass/parts/_car.sass */
 .img-wrap-2 {
   position: relative;
   height: 300px;
@@ -213,78 +220,90 @@ section .car-section-wrap div img {
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 45, ../sass/parts/_car.sass */
+/* line 46, ../sass/parts/_car.sass */
 .img-wrap-2 .img-2 {
-  height: 100px;
+  width: 35%;
   position: absolute;
   bottom: 10px;
   left: 10px;
 }
 
-/* line 53, ../sass/parts/_car.sass */
+/* line 54, ../sass/parts/_car.sass */
 .img-wrap-3 {
   width: 100%;
   height: 300px;
   background-image: url(../img/car-3.jpg);
-  background-size: cover;
+  background-size: auto 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 61, ../sass/parts/_car.sass */
+/* line 62, ../sass/parts/_car.sass */
 .img-wrap-3 .img-3 {
-  width: 25%;
+  width: 35%;
 }
 
-/* line 65, ../sass/parts/_car.sass */
+/* line 66, ../sass/parts/_car.sass */
 .img-wrap-4 {
   height: 300px;
   position: relative;
   background-image: url(../img/car-4.jpg);
-  background-size: cover;
-  background-position: center;
+  background-size: 100vh auto;
+  background-position: 40% 20%;
   background-repeat: no-repeat;
 }
-/* line 74, ../sass/parts/_car.sass */
+@media (max-width: 700px) {
+  /* line 66, ../sass/parts/_car.sass */
+  .img-wrap-4 {
+    size: cover;
+  }
+}
+/* line 77, ../sass/parts/_car.sass */
 .img-wrap-4 .img-4 {
-  width: 30%;
-  height: auto;
   position: absolute;
-  top: 20px;
+  top: 5px;
   right: 20px;
+  width: 35%;
+  height: auto;
 }
 
-/* line 82, ../sass/parts/_car.sass */
+/* line 85, ../sass/parts/_car.sass */
 .img-wrap-5 {
   position: relative;
   height: 300px;
   background-image: url(../img/car-5.jpg);
-  background-size: cover;
+  background-size: auto 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 91, ../sass/parts/_car.sass */
+@media (max-width: 700px) {
+  /* line 85, ../sass/parts/_car.sass */
+  .img-wrap-5 {
+    size: cover;
+  }
+}
+/* line 96, ../sass/parts/_car.sass */
 .img-wrap-5 .img-5 {
   position: absolute;
   left: 20px;
-  bottom: 20px;
-  width: 30%;
+  bottom: 5px;
+  width: 35%;
 }
 
-/* line 97, ../sass/parts/_car.sass */
+/* line 102, ../sass/parts/_car.sass */
 .img-wrap-13 {
   position: relative;
   height: 300px;
   background-image: url(../img/car-13.jpg);
-  background-size: cover;
+  background-size: 100vh auto;
   background-position: center;
   background-repeat: no-repeat;
 }
-/* line 106, ../sass/parts/_car.sass */
+/* line 111, ../sass/parts/_car.sass */
 .img-wrap-13 .img-13 {
   position: absolute;
   right: 20px;
-  bottom: 20px;
-  width: 30%;
+  bottom: 5px;
+  width: 35%;
 }
 
 /* line 34, ../sass/main.sass */
@@ -322,14 +341,14 @@ body {
   font-family: tangerine;
   background-image: url(../img/dice-1.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: right;
   background-attachment: fixed;
 }
 /* line 63, ../sass/main.sass */
 .hero-wrap .hero-img {
   position: absolute;
   bottom: 0;
-  width: 30%;
+  width: 45%;
 }
 
 /* line 69, ../sass/main.sass */
